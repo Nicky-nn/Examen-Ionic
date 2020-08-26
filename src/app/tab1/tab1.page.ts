@@ -9,6 +9,7 @@ export class Tab1Page {
   dado1: Number;
   dado2: Number;
   dado3: Number;
+  dado4: Number;
   resultado: string;
   constructor() {}
 
@@ -19,8 +20,9 @@ export class Tab1Page {
     this.dado1 = Math.floor(Math.random() * 3) + 1;
     this.dado2 = Math.floor(Math.random() * 3) + 1;
     this.dado3 = Math.floor(Math.random() * 3) + 1;
+    this.dado4 = Math.floor(Math.random() * 3) + 1;
 
-    if(this.dado1 === this.dado2 && this.dado2 === this.dado3){
+    if(this.dado1 === this.dado2 && this.dado2 === this.dado3 && this.dado3 === this.dado4){
       this.resultado = 'Ganaste';
     }
     else{
